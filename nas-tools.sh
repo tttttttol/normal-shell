@@ -117,7 +117,16 @@ services:
       - 3000:3000
     volumes:
       - /home/nas-tools/config:/config
-      - /downloads:/downloads
+      - /mnt/Downloads/movies:/data/Downloads/movies
+      - /mnt/Downloads/tvshow:/data/Downloads/tvshow
+      - /mnt/Downloads/music:/data/Downloads/music
+      - /mnt/Downloads/others:/data/Downloads/others
+      - /mnt/Downloads/anime:/data/Downloads/anime
+      - /mnt/yunpan/movies:/data/movies
+      - /mnt/yunpan/tvshow:/data/tvshow
+      - /mnt/yunpan/music:/data/music
+      - /mnt/yunpan/others:/data/others
+      - /mnt/yunpan/anime:/data/anime
       - /mnt:/mnt
       - /root/.config/rclone:/root/.config/rclone
     environment: 
