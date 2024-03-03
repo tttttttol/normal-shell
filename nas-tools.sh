@@ -150,6 +150,11 @@ services:
       - WEBUI_PORT=8088
     volumes:
       - /home/qbittorrent/config:/config
+      - /mnt/Downloads/movies:/mnt/Downloads/movies
+      - /mnt/Downloads/tvshow:/mnt/Downloads/tvshow
+      - /mnt/Downloads/music:/mnt/Downloads/music
+      - /mnt/Downloads/others:/mnt/Downloads/others
+      - /mnt/Downloads/anime:/mnt/Downloads/anime
       - /downloads:/downloads
       - /home/qbittorrent/watch:/watch  
     restart: unless-stopped
